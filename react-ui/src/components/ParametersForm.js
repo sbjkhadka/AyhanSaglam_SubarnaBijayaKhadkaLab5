@@ -30,9 +30,11 @@ const ParametersForm = (props) => {
           <Form.Control
             type="number"
             step="any"
+            min="1"
             placeholder="Enter Number of Sentences "
             name="numSentences"
             onChange={handleInputChange}
+            required
           />
         </Form.Group>
 
@@ -43,6 +45,7 @@ const ParametersForm = (props) => {
             placeholder="Enter URL"
             name="summarizeURL"
             onChange={handleInputChange}
+            required
           />
         </Form.Group>
         <Button variant="primary" type="submit">

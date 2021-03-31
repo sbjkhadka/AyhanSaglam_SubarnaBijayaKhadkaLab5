@@ -13,8 +13,8 @@ exports.run = async (req, res, next) => {
   // const url =
   //   "https://www.recode.net/ad/18027288/ai-sustainability-environment";
   // const numSentence = 3;
-  const url = req.body.summarizeURL;
-  const numSentence = req.body.numSentences;
+  const url = req.body.summarizeURL; // Now this is taking URL from frontend request
+  const numSentence = req.body.numSentences; // Now this is taking numSentences from frontend request
   const sentences = [];
   req.query.numSentence = numSentence;
 
